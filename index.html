@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./asset/js/script.js" defer></script>
+    <link rel="stylesheet" href="./asset/styles/styles.css" />
+    <!-- fevicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./asset/fevicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./asset/fevicon//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./asset/fevicon//favicon-16x16.png"
+    />
+    <link rel="manifest" href="./asset/fevicon//site.webmanifest" />
+    <title>Project Planner</title>
+  </head>
+
+  <body>
+    <div class="backdrop hidden"></div>
+    <header class="header">
+      <p>Project Planner</p>
+      <button class="btn btn--addProject">Add Project</button>
+    </header>
+    <main class="main">
+      <div class="card card--activeProjects">
+        <h2>Active Projects</h2>
+        <div class="projects">
+          <div class="empty">No Projects to show.</div>
+        </div>
+      </div>
+      <div class="card card--finishedProjects">
+        <h2>Finished Projects</h2>
+        <div class="projects">
+          <div class="empty">No Projects to show.</div>
+        </div>
+      </div>
+      <div class="card card--pendingProjects">
+        <h2>Pending Projects</h2>
+        <div class="projects">
+          <div class="empty">No Projects to show.</div>
+        </div>
+      </div>
+    </main>
+
+    <div class="modal hidden">
+      <div class="info">
+        <div class="info-block">
+          <label for="name">Project Name</label>
+          <input
+            id="name"
+            type="text"
+            placeholder="Enter Project Name"
+            required
+          />
+        </div>
+        <div class="info-block info-main">
+          <label for="description">Project Description</label>
+          <textarea
+            name="description"
+            id="description"
+            cols="30"
+            rows="10"
+            placeholder="Click to write!"
+            required
+          ></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-submit">Submit</button>
+    </div>
+  </body>
+</html>
